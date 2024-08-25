@@ -5,4 +5,4 @@ dev:
 	docker run -p 8080:8080 -e NODE_ENV=development badta5te/devops-level-one make dev
 
 build:
-	docker-compose -f docker-compose.yml build
+	docker compose -f docker-compose.yml build
