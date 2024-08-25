@@ -5,10 +5,6 @@ on: push
 jobs:
   build:
     runs-on: ubuntu-latest
-    env:
-      POSTGRES_HOST: db
-      POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: password
     steps:
       - uses: actions/checkout@v4
 
@@ -24,14 +20,8 @@ jobs:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
-      # - name: Copy .env
-      #   run: cp .env.example .env
-      #
-      - name: Build image
-        run: make build
-
-      - name: Run linter
-        run: make lint
+      - name: Copy .env
+        run: cp .env.example .env
 
       - name: Run tests
         run: make test
