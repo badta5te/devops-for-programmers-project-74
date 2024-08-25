@@ -23,11 +23,11 @@ jobs:
       - name: Copy .env
         run: cp .env.example .env
 
-      - name: Run linter
-        run: make lint
-
       - name: Build image
         run: make build
+
+      - name: Run linter
+        run: make lint
 
       - name: Run tests
         run: make test
