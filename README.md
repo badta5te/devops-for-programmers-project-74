@@ -19,8 +19,8 @@ Dockerized [JS Fastify blog](https://github.com/hexlet-components/js-fastify-blo
 - git clone
 - `cp .env.example .env`
 
-For tests: `make test`
-For lint: `make lint`
-For development: `make build` + `make dev` -> http://localhost:8080
+- For tests: `make test`
+- For lint: `make lint`
+- For development: `make build` + `make dev` -> http://localhost:8080
 
 [Docker hub image](https://hub.docker.com/repository/docker/badta5te/devops-for-programmers-project-74/general)
