@@ -20,6 +20,9 @@ jobs:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
+      - name: Copy .env
+        run: cp .env.example .env
+
       - name: Build image
         run: make build
 
