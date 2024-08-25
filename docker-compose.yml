@@ -5,3 +5,4 @@ services:
       context: .
       dockerfile: Dockerfile.production
     command: make test
+
