@@ -1,6 +1,6 @@
 services:
   app:
-    image: badta5te/devops-level-one
+    image: badta5te/devops-for-programmers-project-74
     build:
       context: .
       dockerfile: Dockerfile.production
