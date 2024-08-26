@@ -5,7 +5,7 @@ lint:
 	docker compose -f docker-compose.yml run app make lint
 
 dev:
-	docker run -p 8080:8080 -e NODE_ENV=development badta5te/devops-level-one make dev
+	docker run -p 8080:8080 -e NODE_ENV=development badta5te/devops-for-programmers-project-74 make dev
 
 build:
 	docker compose -f docker-compose.yml build
