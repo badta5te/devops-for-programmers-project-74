@@ -13,7 +13,8 @@ services:
       - DATABASE_NAME=${DATABASE_NAME}
       - DATABASE_USERNAME=${DATABASE_USERNAME}
       - DATABASE_PASSWORD=${DATABASE_PASSWORD}
-
+    volumes:
+      - app:/app
   db:
     image: postgres:16.4-alpine
     environment:
