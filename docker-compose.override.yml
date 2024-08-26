@@ -8,6 +8,8 @@ services:
     command: make dev
     volumes:
       - ./app:/app/
+    environment:
+     - NODE_ENV=development 
 
   caddy:
     image: caddy:2.8.4-alpine
